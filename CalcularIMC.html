@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcular IMC</title>
+    <script>
+        function saltodelinea(){
+            document.write("</br>");
+            document.write("</br>");
+        }
+        function imprimir (frase){
+            saltodelinea();
+            document.write(frase);
+        }
+        let nombre = prompt("informe su nombre : ");// el prompt es un pop-up para hace una pregunta al usuario
+        //y interacturar con el, 
+        let altura = prompt("infome su altura");
+        let peso = prompt ("informe su peso");
+        imc = peso/(altura*altura);
+        imprimir (nombre + " su imc es "+ imc);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
