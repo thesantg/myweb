@@ -2,10 +2,11 @@ let triunfo = 0;
 let perdidas = 0;
 while (triunfo < 3 && perdidas < 3){
     let jugador = prompt("elije 0 para pierda, 1 papel y 2 tijera");
-    let pc = Math.floor(Math.random()*3);
+    let pc = Math.floor(Math.random()*3); 
+    //Math.floor(Math.random() * (maximo - minimo + 1) + min) la funcion de esta manera puede darnos numeros aleatorios desde un rango que necesitemos
 //ifs para ver que elije el jugador
     if (jugador == 0){
-        alert("elejiste pierdra");
+        alert("elejiste piedra");
     }
     else if (jugador == 1){
         alert("elejiste papel");

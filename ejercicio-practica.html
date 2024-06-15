@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel y lijera</title>
+    <script>
+        let usuario = 0
+        let triunfos = 0;
+        let pc = Math.floor(Math.random()*3);
+
+            alert("Bienvenido al juego de piedra, papel o tijera");
+
+            usuario = prompt("elije : 0 piedra, 1 papel , 2 tijera");
+
+            if(usuario == pc){
+                alert("esto es un empate");
+                }else if(usuario == 0 && pc == 2){
+                    triunfos++;
+                    alert("ganaste");
+                    }else if(usuario == 1 && pc == 0){
+                    triunfos++;
+                    alert("ganaste");
+                        }else if(usuario == 2 && pc == 1){
+                        triunfos++;
+                        alert("ganaste");
+            }else{
+                document.write("<p>perdiste</p>");
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
