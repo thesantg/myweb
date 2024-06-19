@@ -14,7 +14,7 @@
                 <label for="hipodoge">hipodoge</label> <!--el atributo for  es para conectarlo con el id, y que el label y input esten conectados, el name es para que todos los radio esten conectados y deje selecionar solo uno-->
                     <input type="radio" name="mascota" id="hipodoge" />
                 <label for="capipepo">capipepo</label>
-                    <input type="radio" nama="mascota" id="capipepo">
+                    <input type="radio" name="mascota" id="capipepo">
                 <label for="ratigueya">Ratigueya</label>
                     <input type="radio" name="mascota" id="ratigueya">
                 <label for="langostelvis">Langostelvis</label>
@@ -28,8 +28,8 @@
         </section>
         <section id ="Seleccionar_ataque">
                 <h2>Elige tu ataque:</h2>
-                    <p>Tu mascota tiene <spam>3</spam> vidas</p> <!--la tag spam sirve para poder modificar lo que este dentro de ella, ejem: strings-->
-                    <p>la mascota del enemigo tiene <span>3</span> vidas</p>
+                    <p>Tu mascota<spam id="mascota-jugador">-----</spam> tiene <spam>3</spam> vidas</p> <!--la tag spam sirve para poder modificar lo que este dentro de ella, ejem: strings-->
+                    <p>la mascota <spam id="mascota-enemigo"></spam> del enemigo tiene <span>3</span> vidas</p>
                         <!--el span vuelve a todo lo que este dentro dinamio, o utilizable en js-->
                     <p> <!--el button no puede estar fuera de un bloque por buenas practicas-->
                         <button id="boton-fuego">Fuego 🔥</button>
