@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <script defer>
+            let limiteIntentos = 3;
+            let pc = aleatorio();
+            function aleatorio(){
+                return Math.floor(Math.random()*3);
+            }
+            
+            for(let i = 1; i<=limiteIntentos;i++){
+            let usuario = parseInt(prompt("Piedra 0, Papel 1, Tijera 2"));
+                if(usuario == pc){
+                    alert("empate");
+                    }else if(usuario == 0 && pc == 2){
+                        alert("Ganaste");
+                        }else if(usuario == 1 && pc == 0){
+                            alert("Ganaste");
+                            }else if(usuario == 2 && pc == 1){
+                                alert("Ganaste");
+                            }else{
+                                alert("Perdiste");
+                                 
+                            }
+                        }
+        </script>
+    </head>
+    <body>
+        <h1 class="titulo"> Piedra, Papel o Tijera</h1>
+    </body>
+</html>
