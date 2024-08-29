@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <script defer>
-            let limiteIntentos = 3;
-            let pc = aleatorio();
-            function aleatorio(){
-                return Math.floor(Math.random()*3);
-            }
-            
-            for(let i = 1; i<=limiteIntentos;i++){
-            let usuario = parseInt(prompt("Piedra 0, Papel 1, Tijera 2"));
-                if(usuario == pc){
-                    alert("empate");
-                    }else if(usuario == 0 && pc == 2){
-                        alert("Ganaste");
-                        }else if(usuario == 1 && pc == 0){
-                            alert("Ganaste");
-                            }else if(usuario == 2 && pc == 1){
-                                alert("Ganaste");
-                            }else{
-                                alert("Perdiste");
-                                 
-                            }
-                        }
-        </script>
+        <meta chatset="UTF-8">
+        <title>Piedra, papel y tijera🥌🧻✂</title>
+        <script src="ejerciciosPractica.js"></script>
     </head>
     <body>
-        <h1 class="titulo"> Piedra, Papel o Tijera</h1>
+        <h1>Piedra, papel y tijera🥌🧻✂</h1>
+        <p>tienes <spam id="intentos">3</spam> intentos</p>
+        <p>tienes <spam id="victorias">0</spam> victorias</p>
+        <p>tu enemigo lleva <spam id="perdidas">0</spam> victorias</p>
+
+        <section id="elegir">
+            <label for="piedra"><input type="radio" name="ataque" id="piedra">Pierdra</label>
+            <label for="papel"><input type="radio" name="ataque" id="papel">Papel</label>
+            <label for="tijera"><input type="radio" name="ataque" id="tijera">Tijera</label>
+        </section>
+
+        <section id="seleccionarAtaque">
+            <br>
+            <button id="botonseleccionar">Seleccionar</button>
+           
+        </section>
+
+        <section id="mensje">
+            <p>tu atacaste con <spam id="ataqueJugador">0</spam> el enemigo ataco con <spam id="ataqueEnemigoId">0</spam></p>
+            <br/>
+            <p id="resultado_combate"></p>
+        </section>
+        
+        <section id="reiniciar">
+            <button id="botonReiniciar">Reiniciar</button>
+        </section>
     </body>
 </html>
