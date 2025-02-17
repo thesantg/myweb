@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <section>
+            <form action="#" method="post">
+                <h2>Informacion personal</h2>
+                    <label for="name">Nombre :<input type="text" id="name" required></label>
+                    <label for="lastname">Apellidos :<input type="text" id="lastname"  required></label>
+                    <label for="fdn">Fecha de nacimiento<input type="date" id="fdn"  required></label>
+                    <label>Genero:</label>
+                    <label for="mujer"><input type="radio" id="mujer" name="generos" value="Mujer">Mujer</label>
+                    <label for="hombre"><input type="radio" id="hombre" name="generos" value="hombre">Hombre</label>
+                    <label for="otros"><input type="radio" id="otros" name="generos" value="otro">Otros</label>
+                <br>
+                <br>
+                <h2>Informacion de contacto:</h2>
+                    <label  for="correo">Correo Electronico <input type="email" required id="correo" name="correo"></label>
+                    <label for="tel">N.Telefono <input type="number" id="tel" name="tel" required></label><br>
+                    <label>Direccion</label><textarea></textarea>
+            </form>
+
+        </section>
+    </body>
+</html>
