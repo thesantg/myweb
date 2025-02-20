@@ -1,5 +1,5 @@
-let numeroSecreto = generarNumeroSecreto();
-let intentos = 1;
+let numeroSecreto = 0;
+let intentos = 0;
 console.log(numeroSecreto);
 
 function asignarTextoElemento(elemento, texto){
@@ -35,7 +35,16 @@ function limpiarCaja(){
 function generarNumeroSecreto(){
      return Math.floor(Math.random()*10)+1;
 }
+function condicionesIniciales(){
+     asignarTextoElemento('h1', 'juego del numero secreto!');
+     asignarTextoElemento('p', 'Indica un numero del 1 al 100');
+     numeroSecreto = generarNumeroSecreto();
+     intentos = 1;
+}
 
-
-asignarTextoElemento('h1', 'juego del numero secreto!');
-asignarTextoElemento('p', 'Indica un numero del 1 al 100');
+function reiniciarJuego(){
+     limpiarCaja();
+     condicionesIniciales();
+     
+}
+condicionesIniciales();
