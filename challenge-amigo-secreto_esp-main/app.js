@@ -10,7 +10,18 @@ function agregarAmigo(){
         amigo.push(nombre);
         console.log(amigo)
         input.value = "";
+        escribirAmigo(amigo);
     }
 
 }
+function escribirAmigo(){
+    let listaAmigos = document.getElementById('listaAmigos');
+        listaAmigos.innerHTML = amigo;
+        amigo.forEach(nombre ==> ){
+            
+        }
+    let lista = document.createElement('li');
+    let contenidolista = document.createTextNode(lista(amigo))
+}
+
 agregarAmigo();
