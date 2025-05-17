@@ -9,8 +9,21 @@ function agregarAmigo(){
     }else{
         arrayAmigo.push(amigojs);
         console.log(arrayAmigo);
+        escribirAmigo(arrayAmigo);
+        inputDeamigo.value = ""
     }
 
+
+}
+function escribirAmigo(){
+    let listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = arrayAmigo;
+
+    arrayAmigo.forEach(amigojs =>{
+        let li = document.createElement('li');
+        li.textContent = amigojs;
+        listaAmigos.appendChild(li);
+    })
 
 }
 agregarAmigo()
