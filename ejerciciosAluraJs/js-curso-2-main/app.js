@@ -1,12 +1,10 @@
-let array = [2,4,,3,5,78,9];
-let i = 0;
-function alCuadrado(){
-  if(i < array.length){ 
-  array[i] = array[i]*2;
-  i++;
-  alCuadrado()
-  }
+//Ejercicio par o impar
+let numeroUsuario = parseInt(prompt("Ingresa un numero?"));
+  if(numeroUsuario % 2 === 0){
+    console.log("es par");
+    }else if(numeroUsuario % 2 != 0){
+        console.log("impar");
   
-  console.log(array);
-}
-alCuadrado();
+      }else{
+        console.log("numero invalido");
+      }
