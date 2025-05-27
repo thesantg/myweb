@@ -1,13 +1,30 @@
 //variables
 let numeroSecreto = 6;
-let numeroUsuario = prompt("ingresa el numero a adivinar entre 1 y 10");
-console.log(numeroUsuario);
-//Comparacion
-if(numeroUsuario == numeroSecreto){
-    //acertamos, fue verdadera la condicion
-    alert(`acertaste el numero ${numeroUsuario}`); 
-    //esto es un Template string, la convinacion de string con varibales usando comiillas  `${variable}`
-}else {
-    // la condicion no se cumplio
-    alert("Lo siento, No acertaste el numero");
+let numeroUsuario = 0;
+let intentos = 1;
+let palabraVeces = 'vez';
+
+    while (numeroUsuario != numeroSecreto) {
+    numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:");
+
+    console.log(numeroUsuario);
+    if (numeroUsuario == numeroSecreto) {
+        //Acertamos, fue verdadera la condición
+        alert(`Acertaste, el número es: ${numeroUsuario}. Lo hiciste en ${intentos} ${palabraVeces}`);
+    } else {
+        if (numeroUsuario > numeroSecreto) {
+            alert('El número secreto es menor');
+        } else {
+            alert('El número secreto es mayor');
+        }
+        //Incrementamos el contador cuando no acierta
+        intentos = intentos + 1;
+        palabraVeces = 'veces';
+        if(intentos > 3){
+            alert('Llegaste al numero maximo de intentos')
+                break;
+        }
+        //La condición no se cumplió
+        //alert('Lo siento, no acertaste el número');
+    }
 }
