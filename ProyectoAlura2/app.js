@@ -18,6 +18,7 @@ function verificarIntento (){
     
     if(numeroDeUsuario === numeroSecreto){
         asingnarTextoElemento('p', `Acertaste el numero en ${intentos} ${(intentos == 1 ? 'vez' : 'veces')}`);
+        document.getElementById("reiniciar").removeAttribute("disabled");
     }else{
         if( numeroDeUsuario > numeroSecreto){
             asingnarTextoElemento('p','El numero Secreto es menor');
@@ -25,11 +26,16 @@ function verificarIntento (){
             asingnarTextoElemento('p', 'El numero Secreto es mayor');
         }
         intentos++;
+        limpiarCaja();
     }
 
     return;
 }
 
+function limpiarCaja(){
+    let valorCaja =  document.querySelector('#valorUsuario');
+    valorCaja.value = "";
+}
 
 
 function generarNumeroSecreto() {
