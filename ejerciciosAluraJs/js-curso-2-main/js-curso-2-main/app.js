@@ -33,3 +33,47 @@ function Mensaje(nombre) {
     return `Hola ${nombre} Bienvenido`;
 }
 console.log(Mensaje("santiago"));*/
+
+
+
+//calcular imc
+/*
+function calcularIMC(){
+    let pesoIMC = parseInt(document.getElementById('peso').value);
+    let alturaIMC = parseInt(document.getElementById('altura').value);
+        console.log(pesoIMC);
+        console.log(alturaIMC);
+    let imc = (alturaIMC * alturaIMC) / pesoIMC;
+    let parrafo = document.querySelector('p');
+    parrafo.innerHTML = imc;
+}
+*/
+
+/*
+//calcular el valor factorial
+
+function sacarFactorial() {
+let numero = parseInt(document.getElementById('peso').value);
+let factorial = 1;
+
+    if(numero == 0 || numero == 1){
+        factorial = 1;
+        console.log(factorial);
+
+    }else{
+
+        while (numero > 0) {
+            factorial = factorial * numero;
+                numero--;
+                console.log(factorial);
+        }
+        console.log(factorial);
+    }
+}
+*/
+
+function cambioDeDivisas(){
+    let dollar = parseFloat(document.getElementById('peso').value);
+    let peso = 20.00;
+    console.log(dollar * peso);
+}
