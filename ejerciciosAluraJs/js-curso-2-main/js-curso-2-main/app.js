@@ -71,9 +71,76 @@ let factorial = 1;
     }
 }
 */
+/*
+    //crear un programa para el cambio de divisas
+    function cambioDeDivisas(){
+        let dollar = parseFloat(document.getElementById('peso').value);
+        let peso = 20.00;
+        console.log(dollar * peso);
+    }
+*/
 
-function cambioDeDivisas(){
-    let dollar = parseFloat(document.getElementById('peso').value);
-    let peso = 20.00;
-    console.log(dollar * peso);
+/*
+//agregar frutas a un array
+function agregarFrutas(){
+    let frutas = [];
+        frutas = prompt('agrega un fruta de tu agrado');
+        console.log(frutas);
+    let opcion = prompt('Desea agregar mas frutas');
+        if(opcion == "si"){
+            agregarFrutas();
+        }
 }
+agregarFrutas();
+*/
+
+/*
+// crear un array de 5 colores que muestre el 3er color
+
+let arrayDeColores = ['red', 'yellow', 'green', 'gray', 'brown'];
+console.log(arrayDeColores[2]);
+
+*/
+
+/*
+//A array de numero agregar un numero al final , uno al princio y eliminar el ultimo
+
+let arrayDeNumeros = [1,2,3];
+    arrayDeNumeros.push(4); //para agregar al final
+    arrayDeNumeros.unshift(0); //agregar al inico
+    arrayDeNumeros.pop(); //eliminar el ultimo
+        console.log(arrayDeNumeros);
+*/
+
+/*
+//crear un array con numero de calificaciones y sacar el promedio de eso
+let arrayCalificaciones = [9,8,7,9,8,5,9];
+let i = 0;
+let promedio = 0;
+function sacarPromedio(){
+    if ( i != arrayCalificaciones.length){
+        promedio = promedio + arrayCalificaciones[i];
+        i++;
+        sacarPromedio();
+    }else{
+        promedio = promedio/arrayCalificaciones.length;
+        console.log(promedio);
+    }
+}
+sacarPromedio();
+*/
+
+
+//Crea un array de nombres. Pide al usuario un nombre con prompt. Indica si el nombre está en el array o no.
+let arrayNombres = ['santiago', 'miguel', 'carlos', 'julio cesar', 'ruben'];
+let nombreUsuario = prompt('ingresa un nombre para revisarlo en la base de datos');
+let i = 0;
+ function revisarNombres(){
+    if(nombreUsuario != arrayNombres[i]){
+        i++;
+        revisarNombres();
+    }else{
+        console.log(arrayNombres[i]);
+    }
+ }
+ revisarNombres();
