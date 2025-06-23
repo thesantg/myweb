@@ -130,7 +130,7 @@ function sacarPromedio(){
 sacarPromedio();
 */
 
-
+/*
 //Crea un array de nombres. Pide al usuario un nombre con prompt. Indica si el nombre está en el array o no.
 let arrayNombres = ['santiago', 'miguel', 'carlos', 'julio cesar', 'ruben'];
 let nombreUsuario = prompt('ingresa un nombre para revisarlo en la base de datos');
@@ -144,3 +144,44 @@ let i = 0;
     }
  }
  revisarNombres();
+ */
+
+/*
+ //Crea una lista vacía llamada "listaGenerica"
+ let listaGenerica = [];
+ */
+
+/*
+//Crea una lista de lenguajes de programación llamada "lenguagesDeProgramacion con los siguientes elementos: 'JavaScript', 'C', 'C++', 'Kotlin' y 'Python'.
+//Agrega a la lista "lenguagesDeProgramacion los siguientes elementos: 'Java', 'Ruby' y 'GoLang'.
+//Crea una función que muestre en la consola todos los elementos de la lista "lenguagesDeProgramacion en orden inverso.
+
+let lenguagesDeProgramacion = ['Javascript', 'C', 'C++', 'Kotlin', 'Python'];
+let inversor = lenguagesDeProgramacion.length;
+lenguagesDeProgramacion.push('Java');
+lenguagesDeProgramacion.push('Ruby');
+lenguagesDeProgramacion.push('Golang');
+
+function ArrayInvertido (){
+    if(inversor >= 0){
+            console.log(lenguagesDeProgramacion[inversor]);
+        inversor--;
+        ArrayInvertido();
+    }
+    
+}
+ArrayInvertido();
+
+*/
+
+//Crea una función que muestre en la consola el número más grande y el número más pequeño en una lista
+
+let listaNumeros = [12,10,9,7,6,3];
+
+function numeroMayorMenor(){
+    for(let i = 0; i<= listaNumeros.length;i++){
+        if(listaNumeros[i] > listaNumeros[i+1]){
+            console.log(listaNumeros[i]);
+        }
+    }
+}
