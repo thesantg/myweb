@@ -174,14 +174,35 @@ ArrayInvertido();
 
 */
 
+/*
 //Crea una función que muestre en la consola el número más grande y el número más pequeño en una lista
 
-let listaNumeros = [12,10,9,7,6,3];
+let listaNumeros = [12,10,9,7,6,3,32];
 
 function numeroMayorMenor(){
+    let numeroMayor = 0;
     for(let i = 0; i<= listaNumeros.length;i++){
-        if(listaNumeros[i] > listaNumeros[i+1]){
-            console.log(listaNumeros[i]);
+        if(listaNumeros[i] > numeroMayor){
+            numeroMayor = listaNumeros[i];
+            console.log(numeroMayor);
         }
     }
 }
+numeroMayorMenor();
+
+*/
+
+/*
+//Crea una función que devuelva la suma de todos los elementos en una lista.
+
+let listaDeArray = [2,5,8,96,7];
+
+function sumasLista (){
+    let suma = 0;
+    for(let i = 0; i<listaDeArray.length;i++){
+        suma = suma + listaDeArray[i];
+    }
+    console.log(suma);
+}
+sumasLista();
+*/
