@@ -222,4 +222,21 @@ function encontrarNumero(){
 encontrarNumero();
 */
 
+/*
 //Crea una función que reciba dos listas de números del mismo tamaño y devuelva una nueva lista con la suma de los elementos uno a uno
+let lista1 = [2,4,9,8];
+let lista2 = [1,3,5,7];
+let lista3 = [];
+let numero = 0;
+
+function  sumarListas(){
+
+    for(let i = 0; i <= lista1.length; i++){
+        numero = lista1[i] + lista2[i];
+        lista3.push(numero);
+    }
+    console.log(lista3);
+}
+
+sumarListas();
+*/
