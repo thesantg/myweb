@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "proyectoPersonal"
+    "liveServer.settings.multiRootWorkspaceName": "proyectoPersonal",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
