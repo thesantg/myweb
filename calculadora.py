@@ -13,25 +13,20 @@ while not salir:
     4. Division
     5. Salir
     """)
-    usuario = int(input("ingresa la operacion a realizar: "))
-    if usuario == 1:
+    if 1 <= usuario <= 4:
+        usuario = int(input("ingresa la operacion a realizar: "))
         numero1 = int(input("ingresa el numero: "))
         numero2 = int(input("ingresa el numero: "))
+    if usuario == 1:
         suma = numero1 + numero2
         print(f"la suma de {numero1} + {numero2} = {suma}")
     elif usuario == 2:
-        numero1 = int(input("ingresa el numero: "))
-        numero2 = int(input("ingresa el numero: "))
         suma = numero1 - numero2
         print(f"la Resta de {numero1} - {numero2} = {suma}")
     elif usuario == 3:
-        numero1 = int(input("ingresa el numero: "))
-        numero2 = int(input("ingresa el numero: "))
         suma = numero1 * numero2
         print(f"la Multiplicacion de {numero1} * {numero2} = {suma}")
     elif usuario == 4:
-        numero1 = int(input("ingresa el numero: "))
-        numero2 = int(input("ingresa el numero: "))
         suma = numero1 / numero2
         print(f"la Division de {numero1} / {numero2} = {suma}")
     elif usuario == 5:
